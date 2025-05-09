@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Ingreso de Datos</title>
+</head>
+
+<body>
+    <!-- Contenedor principal del formulario con clase 'caja' para aplicar estilos -->
+    <div class="caja">
+        <!-- Formulario de ingreso de datos; el atributo action="#" indica que no se enviará a ninguna URL específica -->
+        <form action="#" method="post">
+            <!-- Campo para ingresar el nombre -->
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escriba su Nombre" required>
+
+            <!-- Campo para ingresar el apellido -->
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Escriba su Apellido" required>
+
+            <!-- Campo para ingresar el número de teléfono, acepta solo 10 dígitos -->
+            <label for="telefono">Numero de telefono:</label>
+            <input type="text" id="telefono" name="telefono" placeholder="Ingrese su Numero de Telefono" pattern="\d{10}" maxlength="10" required>
+
+            <!-- Campo para ingresar el correo electrónico -->
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" placeholder="Ingrese su Correo" required>
+
+            <!-- Campo para ingresar la contraseña -->
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su Contraseña" required>
+
+            <!-- Campo para seleccionar la fecha de nacimiento -->
+            <label for="fechaNacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+            <!-- Campo para ingresar la cédula (solo acepta 10 dígitos) -->
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" name="cedula" placeholder="Ingrese su cédula" pattern="\d{10}" maxlength="10" required>
+
+            <!-- Menú desplegable para seleccionar ciudad de residencia -->
+            <label for="Ciudad">Ciudad de Residencia</label>
+            <select name="Ciudad" id="Ciudad" required>
+                <option value="" disabled selected>Seleccione una ciudad</option>
+                <option value="MA">Manta</option>
+                <option value="MO">Montecristi</option>
+                <option value="PV">Portoviejo</option>
+            </select>
+
+            <!-- Casilla de verificación de aceptación de términos -->
+            <label>
+                <input type="checkbox" id="condiciones" name="condiciones" required>
+                Estoy de acuerdo con los Términos y Condiciones
+            </label>
+
+            <!-- Botón para enviar el formulario -->
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+</body>
+</html>

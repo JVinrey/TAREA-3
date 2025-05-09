@@ -1,0 +1,62 @@
+body {
+    font-family: Georgia, sans-serif;      /* Define la tipografía principal del sitio */
+    background-color: #d0eefb;             /* Aplica un color de fondo celeste claro a toda la página */
+    display: flex;                         /* Usa Flexbox para alinear el contenido */
+    justify-content: center;               /* Centra horizontalmente el contenido del body */
+}
+
+/* Estilo del contenedor principal del formulario */
+.caja {
+    max-width: 500px;                      /* Limita el ancho máximo del formulario a 500px */
+    margin: 5px auto;                      /* Margen superior/inferior de 5px y centrado horizontal */
+    background-color: #05202a;             /* Color de fondo oscuro (azul muy oscuro) */
+    padding: 30px;                         /* Espaciado interno alrededor del contenido */
+    border-radius: 10px;                   /* Bordes redondeados para suavizar el contenedor */
+    color: #ffffff;                        /* Color de texto blanco por defecto dentro del contenedor */
+}
+
+/* Estilo para las etiquetas del formulario */
+label {
+    display: block;                        /* Fuerza que cada etiqueta ocupe una línea completa */
+    margin-bottom: 5px;                    /* Espaciado inferior entre etiqueta y campo */
+    font-weight: bold;                     /* Texto en negrita */
+    color: #ffffff;                        /* Color de texto blanco para mantener contraste */
+}
+
+/* Estilo general para todos los campos de entrada y el selector */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;                           /* Ocupa todo el ancho disponible del contenedor */
+    padding: 10px;                         /* Espaciado interno del campo */
+    margin-bottom: 20px;                   /* Espaciado inferior entre campos */
+    border: 3px solid #acafb3;             /* Borde gris claro */
+    border-radius: 5px;                    /* Bordes redondeados para los campos */
+    box-sizing: border-box;                /* Incluye el padding y border en el tamaño total */
+    background-color: #05202a;             /* Fondo oscuro para coincidir con el contenedor */
+    color: #ffffff;                        /* Color de texto gris claro */
+}
+
+/* Estilo específico para el checkbox */
+input[type="checkbox"] {
+    margin-right: 10px;                    /* Espacio entre la casilla y el texto */
+}
+
+/* Estilo para el botón de envío */
+button[type="submit"] {
+    width: 100%;                           /* Ocupa todo el ancho del contenedor */
+    padding: 12px;                         /* Espaciado interno del botón */
+    background-color: #007BFF;             /* Color azul brillante del botón */
+    color: white;                          /* Texto blanco */
+    border: none;                          /* Sin borde */
+    border-radius: 5px;                    /* Bordes redondeados */
+    font-size: 16px;                       /* Tamaño de fuente */
+    cursor: pointer;                       /* Cambia el cursor a una mano al pasar por encima */
+}
+
+/* Efecto visual al pasar el mouse sobre el botón */
+button[type="submit"]:hover {
+    background-color: #0056b3;             /* Cambia a un azul más oscuro en hover */
+}
